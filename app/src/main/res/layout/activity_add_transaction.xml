@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f3f4f6"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Add Transaction"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/amount_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/date_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="dd/mm/yyyy"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="date"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/notes_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Enter notes (optional)"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upload_receipt_button"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:paddingLeft="30dp"
+            android:paddingEnd="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_btn_black"
+            android:layout_height="wrap_content"
+            android:text="Upload Receipt"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_black"
+                android:text="Cancel"
+                android:layout_marginEnd="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_black"
+                android:layout_height="wrap_content"
+                android:text="Save"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f4f6">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Welcome to Expense Master"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Manage your finances effortlessly."
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_text"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Sign Up"
+        android:background="@drawable/bg_btn_black"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/log_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Log In"
+        android:background="@drawable/bg_btn_white"
+        android:textColor="#000"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/key_features_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_in_button"
+        android:layout_centerHorizontal="true"
+        android:text="Key Features"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/track_expenses_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/key_features_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Track your expenses"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/manage_budgets_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/track_expenses_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Create and manage budgets"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/financial_literacy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manage_budgets_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Learn financial literacy"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>

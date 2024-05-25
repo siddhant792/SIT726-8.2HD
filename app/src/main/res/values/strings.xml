@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Expense Master</string>
+    <string-array name="categories_array">
+        <item>Select Category</item>
+        <item>Rent</item>
+        <item>Groceries</item>
+        <item>Utilities</item>
+        <item>Transportation</item>
+        <item>Entertainment</item>
+    </string-array>
+</resources>
